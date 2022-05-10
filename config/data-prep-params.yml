@@ -1,0 +1,13 @@
+sparsity: 0.8
+
+categorical_label:
+  logic: 'label'
+
+categorical_if_exists:
+  logic: 'if_exists'
+
+
+sample_map: {'column_1': 'continuous', # for continuous variables
+              'column_2':'if_exists',  # for categorical variables
+              'column_3':'label',      # for categorical variables
+              'column_4':'recency'}    # for continuous variables
